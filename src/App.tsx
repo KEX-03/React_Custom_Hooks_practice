@@ -4,6 +4,7 @@ import useUpdateLogger from './useUpdateLogger'
 
 function App() {
   const [name, setName] = useLocalStorage('name', '')
+  useUpdateLogger(name)
 
   return (
     <input 
