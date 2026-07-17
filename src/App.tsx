@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
+import useLocalStorage from './useLocalStorage'
 
 function App() {
-  const [name, setName] = useState('')
+  const [name, setName] = useLocalStorage('')
 
   return (
     <input 
