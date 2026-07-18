@@ -2,7 +2,7 @@ import React from 'react'
 import useLocalStorage from './useLocalStorage'
 import useUpdateLogger from './useUpdateLogger'
 
-function App() {
+export default function App() {
   const [name, setName] = useLocalStorage('name', '')
   useUpdateLogger(name)
 
@@ -15,4 +15,4 @@ function App() {
   )
 }
 
-export default App
+
